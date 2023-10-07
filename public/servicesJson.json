@@ -1,0 +1,51 @@
+[
+    {
+      "id": 1,
+      "name": "Tech Conference and Expo Management",
+      "image": "https://i.ibb.co/q9nYDZz/image-by-rawpixel-com-53876-165282.jpg",
+      "price": "$2500",
+      "description": "Our Tech Conference and Expo Management service offers comprehensive event planning and execution for technology conferences and expos. With a dedicated team of experts, we handle every aspect, including venue selection, logistics coordination, speaker management, and attendee registration. From keynote presentations to breakout sessions and networking opportunities, we ensure a seamless and successful event that leaves a lasting impression on your attendees.",
+      "buttonText": "Learn More"
+    },
+    {
+      "id": 2,
+      "name": "Gaming Convention Planning",
+      "image": "gaming_convention.jpg",
+      "price": "$3000",
+      "description": "Embark on an extraordinary journey through our Gaming Convention! Our specialized team plans and executes large-scale gaming conventions featuring a diverse array of activities. From exhilarating tournaments to immersive showcases and interactive exhibits, this event promises an unforgettable experience for both casual gamers and hardcore enthusiasts alike.",
+      "buttonText": "Get Tickets"
+    },
+    {
+      "id": 3,
+      "name": "Hackathon Coordination",
+      "image": "hackathon.jpg",
+      "price": "$2000",
+      "description": "Gear up for an adrenaline-fueled coding experience with our Hackathon Coordination service. We bring together passionate developers and designers for intense coding sessions and creative problem-solving. With carefully crafted challenges, exciting prizes, and an environment conducive to innovation, this event promises a memorable and productive coding marathon.",
+      "buttonText": "Register Now"
+    },
+    {
+      "id": 4,
+      "name": "eSports Tournament Management",
+      "image": "esports_tournament.jpg",
+      "price": "$2800",
+      "description": "Immerse yourself in the world of competitive gaming with our eSports Tournament Management service. Our team handles all aspects, including game selection, scheduling, and logistics. Whether you're a professional player seeking glory or a spectator craving heart-pounding action, our events guarantee thrilling competitions and unforgettable moments.",
+      "buttonText": "Join the Battle"
+    },
+    {
+      "id": 5,
+      "name": "Virtual Reality (VR) Experience Events",
+      "image": "vr_experience.jpg",
+      "price": "$3500",
+      "description": "Embark on an extraordinary journey through the Virtual Reality (VR) universe! Our VR Experience Events offer attendees the opportunity to explore cutting-edge VR technology. From immersive simulations to interactive storytelling, you'll be transported to new dimensions of entertainment. Discover the limitless possibilities of VR and prepare to be amazed.",
+      "buttonText": "Book Your Session"
+    },
+    {
+      "id": 6,
+      "name": "Game Developer Workshops",
+      "image": "game_developer_workshops.jpg",
+      "price": "$1800",
+      "description": "Unleash your potential as a game developer with our Game Developer Workshops. Whether you're a budding enthusiast or an experienced developer, our workshops cover essential aspects of game design, programming, and marketing. Led by industry experts, these workshops equip you with the skills and knowledge to create captivating games that resonate with audiences worldwide.",
+      "buttonText": "Enroll Now"
+    }
+  ]
+  
