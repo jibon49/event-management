@@ -1,21 +1,36 @@
+import { Link } from "react-router-dom";
+import PropTypes from 'prop-types';
 
 
-const ServiceCard = ({data}) => {
 
-    const {name, image} = data
+const ServiceCard = ({ data }) => {
+
+    const { id, name, image, price, description } = data
+
 
     return (
-        <div className="card card-compact bg-base-100 shadow-xl">
-            <figure><img src={image} alt="Shoes" /></figure>
-            <div className="card-body">
-                <h2 className="card-title">{name}!</h2>
-                <p>If a dog chews shoes whose shoes does he choose?</p>
-                <div className="card-actions justify-end">
-                    <button className="btn btn-primary">Buy Now</button>
+        <div className='p-4 bg-white rounded-md'>
+            <div className="relative">
+                <img className='w-[349px] h-[217px] rounded-md' src={image} alt="" />
+                <div>
+                    <div className="absolute top-2 right-2 bg-[#0E21A0] px-2 py-1 rounded-md">
+                        <span className="text-white font-bold">{price}</span>
+                    </div>
                 </div>
+            </div>
+            <h3 className='text-xl font-semibold mt-4'>{name}</h3>
+
+            <div className='flex-grow'>
+                <p className='mt-3 text-sm'>{description.slice(0, 200)}...</p>
+                <Link to={`/ServiceDetails/${id}`} className="font-bold text-blue-400">Read more</Link>
             </div>
         </div>
     );
+};
+
+ServiceCard.propTypes = {
+    data: PropTypes.object
+  
 };
 
 export default ServiceCard;

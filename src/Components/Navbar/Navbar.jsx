@@ -1,12 +1,12 @@
-import { useContext } from "react";
+
 import { Link } from "react-router-dom";
-import { ServiceContext } from "../../ServiceProvider/ServiceProvider";
+
 
 
 const Navbar = () => {
 
     const links = <>
-        <li><Link to='/home'>Home</Link></li>
+        <li><Link to='/'>Home</Link></li>
         <li><Link to='/about'>About</Link></li>
         <li><Link to='/services'>Services</Link></li>
         <li><Link to='/Features'>Features</Link></li>
@@ -17,7 +17,7 @@ const Navbar = () => {
     return (
 
 
-        <div className="navbar text-white glass font-bold">
+        <div className="navbar font-bold">
             <div className="navbar-start">
                 <div className="dropdown">
                     <label tabIndex={0} className="btn btn-ghost lg:hidden">

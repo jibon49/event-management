@@ -1,51 +1,56 @@
 [
-    {
+  {
       "id": 1,
       "name": "Tech Conference and Expo Management",
-      "image": "https://i.ibb.co/q9nYDZz/image-by-rawpixel-com-53876-165282.jpg",
+      "image": "https://i.ibb.co/GMVLncq/digital-blue-hud-interface-team-concept-53876-13728.jpg",
+      "banner": "https://i.ibb.co/TKhLh2j/globalization-communication-concept-earth-luminous-rays-3d-rendering-355067-9998.jpg",
       "price": "$2500",
-      "description": "Our Tech Conference and Expo Management service offers comprehensive event planning and execution for technology conferences and expos. With a dedicated team of experts, we handle every aspect, including venue selection, logistics coordination, speaker management, and attendee registration. From keynote presentations to breakout sessions and networking opportunities, we ensure a seamless and successful event that leaves a lasting impression on your attendees.",
-      "buttonText": "Learn More"
-    },
-    {
+      "description": "Our Tech Conference and Expo Management service offers comprehensive event planning and execution for technology conferences and expos. With a dedicated team of experts, we handle every aspect, including venue selection, logistics coordination, speaker management, and attendee registration. From keynote presentations to breakout sessions and networking opportunities, we ensure a seamless and successful event that leaves a lasting impression on your attendees. Whether you're a tech giant hosting a large-scale conference or a startup looking to make your mark in the industry, our service is tailored to meet your specific needs. We understand the importance of creating a dynamic and engaging environment that fosters innovation and collaboration. Let us handle the details while you focus on delivering valuable content and forging meaningful connections.",
+      "banner_title": "Innovate and Connect: Elevate Your Tech Event Experience"
+  },
+  {
       "id": 2,
       "name": "Gaming Convention Planning",
-      "image": "gaming_convention.jpg",
+      "image": "https://i.ibb.co/vzW9QSh/after-winning-esports-championship-male-gamer-shakes-hands-with-generative-ai-28914-24024.jpg",
+      "banner": "https://i.ibb.co/YtDjP6J/3d-abstract-background-with-flowing-hexagonal-grid-design-1048-11285.jpg",
       "price": "$3000",
-      "description": "Embark on an extraordinary journey through our Gaming Convention! Our specialized team plans and executes large-scale gaming conventions featuring a diverse array of activities. From exhilarating tournaments to immersive showcases and interactive exhibits, this event promises an unforgettable experience for both casual gamers and hardcore enthusiasts alike.",
-      "buttonText": "Get Tickets"
-    },
-    {
+      "description": "Embark on an extraordinary journey through our Gaming Convention! Our specialized team plans and executes large-scale gaming conventions featuring a diverse array of activities. From exhilarating tournaments to immersive showcases and interactive exhibits, this event promises an unforgettable experience for both casual gamers and hardcore enthusiasts alike. Whether you're a competitive gamer seeking to test your skills against the best or a fan looking to immerse yourself in the vibrant gaming community, our convention has something for everyone. With state-of-the-art equipment and expert tournament organization, you can expect nothing less than top-tier gaming action. Join us for a weekend of excitement, camaraderie, and pure gaming joy!",
+      "banner_title": "Level Up Your Experience: Dive Into the World of Gaming"
+  },
+  {
       "id": 3,
       "name": "Hackathon Coordination",
-      "image": "hackathon.jpg",
+      "image": "https://i.ibb.co/y0br9KD/html-system-website-concept-23-2150376770.jpg",
+      "banner": "https://i.ibb.co/kJ03yMy/abstract-modern-tech-programming-code-screen-developer-505353-240.jpg",
       "price": "$2000",
-      "description": "Gear up for an adrenaline-fueled coding experience with our Hackathon Coordination service. We bring together passionate developers and designers for intense coding sessions and creative problem-solving. With carefully crafted challenges, exciting prizes, and an environment conducive to innovation, this event promises a memorable and productive coding marathon.",
-      "buttonText": "Register Now"
-    },
-    {
+      "description": "Gear up for an adrenaline-fueled coding experience with our Hackathon Coordination service. We bring together passionate developers and designers for intense coding sessions and creative problem-solving. With carefully crafted challenges, exciting prizes, and an environment conducive to innovation, this event promises a memorable and productive coding marathon. Whether you're a seasoned coder or a newbie looking to sharpen your skills, our hackathon provides a platform for you to showcase your talent and collaborate with like-minded individuals. Expect sleepless nights, bursts of inspiration, and the satisfaction of bringing your ideas to life in a high-energy, competitive setting. Join us in pushing the boundaries of innovation!",
+      "banner_title": "Code, Collaborate, and Conquer: Unleash Your Coding Potential"
+  },
+  {
       "id": 4,
       "name": "eSports Tournament Management",
-      "image": "esports_tournament.jpg",
+      "image": "https://i.ibb.co/gRjKXtW/e-sport-arena-glow-scenery-3d-rendering-illustration-43901-103.jpg",
+      "banner": "https://i.ibb.co/CBJ2tLr/view-illuminated-neon-gaming-keyboard-setup-controller-23-2149529369.jpg",
       "price": "$2800",
-      "description": "Immerse yourself in the world of competitive gaming with our eSports Tournament Management service. Our team handles all aspects, including game selection, scheduling, and logistics. Whether you're a professional player seeking glory or a spectator craving heart-pounding action, our events guarantee thrilling competitions and unforgettable moments.",
-      "buttonText": "Join the Battle"
-    },
-    {
+      "description": "Immerse yourself in the world of competitive gaming with our eSports Tournament Management service. Our team handles all aspects, including game selection, scheduling, and logistics. Whether you're a professional player seeking glory or a spectator craving heart-pounding action, our events guarantee thrilling competitions and unforgettable moments. Experience the rush of victory and the camaraderie of fellow gamers in a professional, organized environment. From popular titles to niche games, we offer a diverse range of competitive experiences. Join us and become a part of the vibrant eSports community!",
+      "banner_title": "Compete for Glory: Thrilling eSports Tournaments Await"
+  },
+  {
       "id": 5,
       "name": "Virtual Reality (VR) Experience Events",
-      "image": "vr_experience.jpg",
+      "image": "https://i.ibb.co/GtmJYt4/business-people-using-augmented-reality-headset-virtual-meeting-senior-businessman-scrolling-documen.jpg",
+      "banner": "https://i.ibb.co/V2jY4bZ/getting-started-with-business-ideas-with-metaverse-online-system-10221-14526.jpg",
       "price": "$3500",
-      "description": "Embark on an extraordinary journey through the Virtual Reality (VR) universe! Our VR Experience Events offer attendees the opportunity to explore cutting-edge VR technology. From immersive simulations to interactive storytelling, you'll be transported to new dimensions of entertainment. Discover the limitless possibilities of VR and prepare to be amazed.",
-      "buttonText": "Book Your Session"
-    },
-    {
+      "description": "Embark on an extraordinary journey through the Virtual Reality (VR) universe! Our VR Experience Events offer attendees the opportunity to explore cutting-edge VR technology. From immersive simulations to interactive storytelling, you'll be transported to new dimensions of entertainment. Discover the limitless possibilities of VR and prepare to be amazed. Whether you're a tech enthusiast or simply curious about the latest advancements, our events provide hands-on experiences that showcase the incredible potential of VR technology. Step into a world of wonder and be a part of the future!",
+      "banner_title": "Journey Beyond Reality: Explore the VR Universe"
+  },
+  {
       "id": 6,
       "name": "Game Developer Workshops",
-      "image": "game_developer_workshops.jpg",
+      "image": "https://i.ibb.co/C1FNTvs/young-men-playing-online-games-competition-274719-10272.jpg",
+      "banner": "https://i.ibb.co/r01B90H/gamer-playing-online-game-with-joystick-controller-neon-glow-dark-cyberpunk-room-gaming-esports-chal.jpg",
       "price": "$1800",
-      "description": "Unleash your potential as a game developer with our Game Developer Workshops. Whether you're a budding enthusiast or an experienced developer, our workshops cover essential aspects of game design, programming, and marketing. Led by industry experts, these workshops equip you with the skills and knowledge to create captivating games that resonate with audiences worldwide.",
-      "buttonText": "Enroll Now"
-    }
-  ]
-  
+      "description": "Unleash your potential as a game developer with our Game Developer Workshops. Whether you're a budding enthusiast or an experienced developer, our workshops cover essential aspects of game design, programming, and marketing. Led by industry experts, these workshops equip you with the skills and knowledge to create captivating games that resonate with audiences worldwide. Dive deep into the world of game development, from concept to execution. Gain insights into game mechanics, art, monetization strategies, and more. Join us in shaping the future of gaming!",
+      "banner_title": "Crafting Games, Shaping Futures: Unleash Your Inner Developer"
+  }
+]

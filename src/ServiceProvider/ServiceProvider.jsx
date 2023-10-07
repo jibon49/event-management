@@ -1,4 +1,5 @@
 import { createContext,  useEffect, useState } from "react";
+import PropTypes from 'prop-types';
 
 export const ServiceContext = createContext()
 
@@ -23,6 +24,10 @@ const ServiceProvider = ({children}) => {
             {children}
         </ServiceContext.Provider>
     );
+};
+
+ServiceProvider.propTypes = {
+    children: PropTypes.object
 };
 
 export default ServiceProvider;
