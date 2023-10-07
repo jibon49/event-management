@@ -1,0 +1,34 @@
+[
+    {
+        "id": 1,
+        "image": "https://i.ibb.co/nMHmtwd/concept-partnership-teamwork-mixed-media-641298-24911.jpg",
+        "title": "Tech Summit 2021",
+        "description": "Tech Summit 2021 was a groundbreaking event that brought together innovators, thought leaders, and tech enthusiasts from around the world. The summit featured keynote presentations, interactive workshops, and panel discussions on emerging technologies and their impact on industries. Attendees gained valuable insights and networked with industry experts, paving the way for future collaborations and innovations.",
+        "date": "November 11, 2015",
+        "location": "San Francisco, CA"
+    },
+    {
+        "id": 2,
+        "image": "https://i.ibb.co/hMLv1j9/videogamer-winning-first-person-shooter-tournament-using-rgb-keyboard-professional-headphones-pro-pl.jpg",
+        "title": "Gaming Expo Extravaganza",
+        "description": "The Gaming Expo Extravaganza was a thrilling showcase of the latest advancements in the gaming industry. Gamers, developers, and enthusiasts gathered to experience cutting-edge games, virtual reality demos, and participate in competitive tournaments. The event fostered a sense of community and ignited a passion for gaming among attendees.",
+        "date": "December 8, 2018",
+        "location": "Los Angeles, CA"
+    },
+    {
+        "id": 3,
+        "image": "https://i.ibb.co/N24B5Yw/rear-view-young-successful-businessman-business-conference-room-with-public-giving-presentations-aud.jpg",
+        "title": "Innovation Symposium",
+        "description": "The Innovation Symposium was a dynamic forum for exploring groundbreaking technologies and their potential applications across various industries. Renowned speakers shared their insights on AI, blockchain, IoT, and more. Attendees engaged in thought-provoking discussions and gained actionable knowledge to drive innovation in their respective fields.",
+        "date": "September 2, 2017",
+        "location": "New York City, NY"
+    },
+    {
+        "id": 4,
+        "image": "https://i.ibb.co/0QjYm9v/faceless-hackers-red-shadows-using-laptops-along-with-abstract-digital-symbols-generative-ai-438099.jpg",
+        "title": "Hackathon for Social Impact",
+        "description": "The Hackathon for Social Impact was a collaborative effort to leverage technology for positive change. Participants worked tirelessly to develop innovative solutions addressing pressing social issues. The event sparked creativity, camaraderie, and a sense of purpose among participants, leaving a lasting impact on the community.",
+        "date": "June 20, 2019",
+        "location": "Chicago, IL"
+    }
+]
