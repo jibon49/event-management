@@ -11,7 +11,7 @@ const ServiceCard = ({ data }) => {
     return (
         <div className='p-4 bg-white rounded-md'>
             <div className="relative">
-                <img className='w-[349px] h-[217px] rounded-md' src={image} alt="" />
+                <img className='md:w-[349px] md:h-[217px] w-full rounded-md' src={image} alt="" />
                 <div>
                     <div className="absolute top-2 right-2 bg-[#0E21A0] px-2 py-1 rounded-md">
                         <span className="text-white font-bold">{price}</span>
