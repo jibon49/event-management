@@ -11,7 +11,7 @@ const Navbar = () => {
     const links = <>
         <li><Link to='/'>Home</Link></li>
         <li><Link to='/about'>About</Link></li>
-        <li><Link to='/services'>Services</Link></li>
+        <li><Link to='/registration'>Event Registration</Link></li>
         <li><Link to='/Features'>Features</Link></li>
         <li><Link to='/profile'>Profile</Link></li>
 
@@ -19,14 +19,14 @@ const Navbar = () => {
 
     const { user, logOut } = useContext(AuthContext)
 
-    const handleLogout=()=>{
+    const handleLogout = () => {
         logOut()
-        .then(result=>{
-            console.log(result)
-        })
-        .catch(error=>{
-            console.error(error)
-        })
+            .then(result => {
+                console.log(result)
+            })
+            .catch(error => {
+                console.error(error)
+            })
     }
 
     return (
@@ -53,8 +53,13 @@ const Navbar = () => {
                 {
                     user ?
                         <div className="flex items-center">
+                            <div className="avatar">
+                                <div className="w-10 mr-2 rounded-full">
+                                    <img src={user.photoURL} />
+                                </div>
+                            </div>
                             <p>{user.displayName}</p>
-                            <button onClick={handleLogout} className="btn">Logout</button>
+                            <button onClick={handleLogout} className="btn bg-blue-500 text-white ml-1">Logout</button>
                         </div> :
                         <div>
                             <NavLink to='/login'><button className="btn">Login</button></NavLink>

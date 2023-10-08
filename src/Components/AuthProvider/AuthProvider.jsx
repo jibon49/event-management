@@ -9,8 +9,10 @@ export const auth = getAuth(app)
 const AuthProvider = ({ children }) => {
 
     const [user, setUser] = useState(null)
+    const [loading, setLoading] = useState(true)
 
     const createUser = async (email, password, displayName, photoURL) => {
+        setLoading(true)
         try {
             const userCredential = await createUserWithEmailAndPassword(auth, email, password);
 
@@ -29,12 +31,14 @@ const AuthProvider = ({ children }) => {
     }
 
     const logOut = () => {
+        setLoading(true)
         return signOut(auth)
 
     }
 
 
     const logIn = (email, password) => {
+        setLoading(true)
         return signInWithEmailAndPassword(auth, email, password)
     }
 
@@ -42,6 +46,7 @@ const AuthProvider = ({ children }) => {
         const unsSubscribe = onAuthStateChanged(auth, (currentUser) => {
             setUser(currentUser);
             console.log(currentUser)
+            setLoading(false)
         })
         return () => {
             unsSubscribe();
@@ -52,7 +57,8 @@ const AuthProvider = ({ children }) => {
         user,
         createUser,
         logOut,
-        logIn
+        logIn,
+        loading
     }
 
     return (

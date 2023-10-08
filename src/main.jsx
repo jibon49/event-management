@@ -15,11 +15,17 @@ import ServiceDetails from './Components/ServiceDetails/ServiceDetails';
 import Login from './Components/Login/Login';
 import Register from './Components/Register/Register';
 import AuthProvider from './Components/AuthProvider/AuthProvider';
+import PrivateRoute from './Components/PrivateRoute/PrivateRoute';
+import ErrorPage from './Components/ErrorPage/ErrorPage';
+import Features from './Components/Features/Features';
+import EventRegistration from './Components/EventRegistration/EventRegistration';
+import Profile from './Components/Profile/Profile';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Root></Root>,
+    errorElement:<ErrorPage></ErrorPage>,
     children: [
       {
         path: "/",
@@ -38,8 +44,20 @@ const router = createBrowserRouter([
         element: <Register></Register>
       },
       {
+        path: "/features",
+        element: <Features></Features>
+      },
+      {
+        path: "/registration",
+        element: <PrivateRoute><EventRegistration></EventRegistration></PrivateRoute>
+      },
+      {
+        path: "/profile",
+        element: <PrivateRoute><Profile></Profile></PrivateRoute>
+      },
+      {
         path: "/serviceDetails/:id",
-        element: <ServiceDetails></ServiceDetails>,
+        element: <PrivateRoute><ServiceDetails></ServiceDetails></PrivateRoute>,
         loader: () => fetch('/servicesJson.json')
       }
     ]

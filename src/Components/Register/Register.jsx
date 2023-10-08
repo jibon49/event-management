@@ -1,11 +1,17 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import Navbar from "../Navbar/Navbar";
 import { AuthContext } from "../AuthProvider/AuthProvider";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import { useNavigate } from "react-router-dom";
 
 
 const Register = () => {
 
     const { createUser } = useContext(AuthContext)
+    const navigate = useNavigate();
+
+    const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{6,}$/
 
     const handleRegister = e => {
         e.preventDefault();
@@ -16,10 +22,31 @@ const Register = () => {
         const photoUrl = form.get('photoUrl');
 
 
+        console.log(passwordRegex.test(password));
 
-        createUser(email, password, name, photoUrl)
-            .then(result => console.log(result))
-            .catch(error => console.error(error))
+        if (password.length > 6) {
+            if (passwordRegex.test(password)) {
+                createUser(email, password, name, photoUrl)
+                    .then(result => {
+                        console.log(result)
+                        if (result) {
+                            navigate('/')
+                            toast('Account Registration Successful')
+                        }
+
+                    })
+                    .catch(error => {
+                        console.error(error)
+
+                    })
+            }
+            else{
+                toast.error("Password must be contain at least one uppercase letter, one lowercase letter, one digit, and one special character.")
+            }
+        }
+        else {
+            toast.error("password must be 6 character long")
+        }
     }
 
 
@@ -68,6 +95,7 @@ const Register = () => {
                     </form>
                 </div>
             </div>
+            <ToastContainer></ToastContainer>
         </div>
     );
 };

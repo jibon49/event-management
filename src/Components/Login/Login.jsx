@@ -1,12 +1,16 @@
 import { useContext } from "react";
 import Navbar from "../Navbar/Navbar";
 import { AuthContext } from "../AuthProvider/AuthProvider";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation, useNavigate } from "react-router-dom";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 const Login = () => {
 
     const { logIn } = useContext(AuthContext)
+    const location = useLocation();
+    const navigate = useNavigate();
 
     const handleRegister = e => {
         e.preventDefault();
@@ -14,9 +18,23 @@ const Login = () => {
         const email = form.get('email');
         const password = form.get('password');
 
+       
+
         logIn(email, password)
-            .then(result => console.log(result))
-            .catch(error => console.error(error))
+            .then(result => {
+                console.log(result)
+                navigate(location?.state ? location.state : '/')
+                
+            
+                toast.success('Login successful')
+            })
+            .catch(error => {
+                console.error(error)
+                if(error.message === 'Firebase: Error (auth/invalid-login-credentials).'){
+                    toast.error('Invalid Credential')
+                }
+                
+            })
 
     }
 
@@ -49,6 +67,7 @@ const Login = () => {
                     </form>
                 </div>
             </div>
+            <ToastContainer></ToastContainer>
         </div>
     );
 };
