@@ -20,7 +20,12 @@ console.log(greetign);
 
 #### Answer: ?
 
+<<<<<<< HEAD
 <i>Write your explanation here</i>
+=======
+<i>Answer: B: ReferenceError: greetign is not defined
+Explanation: The variable greetign is misspelled, and it has not been defined anywhere in the code. This will result in a ReferenceError because JavaScript will fail to find the variable.</i>
+>>>>>>> 26fa0c97d399bf2a8a030bf7eaf747f5ec7662ca
 
 </p>
 </details>
@@ -45,7 +50,13 @@ sum(1, "2");
 
 #### Answer: ?
 
+<<<<<<< HEAD
 <i>Write your explanation here</i>
+=======
+<i>Answer:C:"12"
+In JavaScript, when we use the + operator with a string and a non-string value, it performs concatenation. In this case, the number 1 is coerced into a string and concatenated with the string "2", resulting in the string "12".
+</i>
+>>>>>>> 26fa0c97d399bf2a8a030bf7eaf747f5ec7662ca
 
 </p>
 </details>
@@ -71,7 +82,12 @@ console.log(food);
 
 #### Answer: ?
 
+<<<<<<< HEAD
 <i>Write your explanation here</i>
+=======
+<i>Answer:B: `['🍝', '🍫', '🥑', '🍔']`
+here in this code the info.favoriteFood is pointing at the address of the '🍕' or the first element of the food array.so when info.favoriteFood is assigned with '🍝', the array changed to the `['🍝', '🍫', '🥑', '🍔']` </i>
+>>>>>>> 26fa0c97d399bf2a8a030bf7eaf747f5ec7662ca
 
 </p>
 </details>
@@ -96,7 +112,12 @@ console.log(sayHi());
 
 #### Answer: ?
 
+<<<<<<< HEAD
 <i>Write your explanation here</i>
+=======
+<i>Answer:B: `Hi there, undefined`
+Here the sayHi function taking a argument "name", and inside the function the name is called. when the function is called there is no argument given. thats why it will sho undefined</i>
+>>>>>>> 26fa0c97d399bf2a8a030bf7eaf747f5ec7662ca
 
 </p>
 </details>
@@ -124,7 +145,12 @@ console.log(count);
 
 #### Answer: ?
 
+<<<<<<< HEAD
 <i>Write your explanation here</i>
+=======
+<i>Answer:C: 3"
+In This code when every element of the nums array iterates, the if condition check whether the element is true or false, we know in javascript evry non zero integer is true where 0 represent false, so in first iteration the element of the array is 0. For this it doesnt execute the code insind if condition.From this in every iteration except 0 the count increase. And final answer is 3.</i>
+>>>>>>> 26fa0c97d399bf2a8a030bf7eaf747f5ec7662ca
 
 </p>
 </details>
