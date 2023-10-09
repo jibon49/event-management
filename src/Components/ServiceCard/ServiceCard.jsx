@@ -9,7 +9,7 @@ const ServiceCard = ({ data }) => {
 
 
     return (
-        <div className='p-4 bg-white rounded-md'>
+        <div data-aos="fade-up" className='p-4 bg-white rounded-md'>
             <div className="relative">
                 <img className='md:w-[349px] md:h-[217px] w-full rounded-md' src={image} alt="" />
                 <div>

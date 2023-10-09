@@ -2,7 +2,7 @@
 import { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../AuthProvider/AuthProvider";
-import { signOut } from "firebase/auth";
+
 
 
 
@@ -12,7 +12,6 @@ const Navbar = () => {
         <li><Link to='/'>Home</Link></li>
         <li><Link to='/about'>About</Link></li>
         <li><Link to='/registration'>Event Registration</Link></li>
-        <li><Link to='/Features'>Features</Link></li>
         <li><Link to='/profile'>Profile</Link></li>
 
     </>
@@ -32,7 +31,7 @@ const Navbar = () => {
     return (
 
 
-        <div className="navbar font-bold">
+        <div className="navbar bg-blue-200 font-bold">
             <div className="navbar-start">
                 <div className="dropdown">
                     <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -59,7 +58,7 @@ const Navbar = () => {
                                 </div>
                             </div>
                             <p>{user.displayName}</p>
-                            <button onClick={handleLogout} className="btn bg-blue-500 text-white ml-1">Logout</button>
+                            <button onClick={handleLogout} className="btn bg-blue-500 border-none text-white ml-1">Logout</button>
                         </div> :
                         <div>
                             <NavLink to='/login'><button className="btn">Login</button></NavLink>

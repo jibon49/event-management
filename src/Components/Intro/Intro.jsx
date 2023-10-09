@@ -13,10 +13,10 @@ const Intro = () => {
                 </p>
                 
             </div>
-            <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+            <div className="mt-10 grid p-20 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
 
                 {/* great service */}
-                    <div>
+                    <div data-aos="fade-up">
                         <div className="flex items-center text-center text-xl font-bold gap-2 mb-4">
                             <RiCustomerService2Line className="text-orange-500 text-3xl"></RiCustomerService2Line>
                             <p>Great Services</p>
@@ -27,7 +27,7 @@ const Intro = () => {
                     </div>
 
                     {/* expert */}
-                    <div>
+                    <div data-aos="fade-up">
                         <div className="flex items-center text-center text-xl font-bold gap-2 mb-4">
                             <FaUserCheck className="text-orange-500 text-3xl"></FaUserCheck>
                             <p>Proficient Experts</p>
@@ -38,7 +38,7 @@ const Intro = () => {
                     </div>
 
                     {/* creative */}
-                    <div>
+                    <div data-aos="fade-up">
                         <div className="flex items-center text-center text-xl font-bold gap-2 mb-4">
                             <FcIdea className="text-orange-500 text-3xl"></FcIdea>
                             <p>Innovative Concepts</p>

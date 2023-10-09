@@ -5,7 +5,7 @@ import { CiLocationOn } from 'react-icons/ci';
 const Footer = () => {
     return (
         <footer>
-            <footer className="footer p-10 md:p-20 lg:p-28 text-white  bg-[#212529]">
+            <footer data-aos="fade-down" className="footer p-10 md:p-20 lg:p-28 text-white  bg-[#212529]">
 
                 <nav className="lg:ml-28 text-lg">
                     <header className="footer-title">Services</header>
@@ -15,7 +15,7 @@ const Footer = () => {
                     <a className="link link-hover">Blog</a>
                 </nav>
 
-                <nav className="w-96 text">
+                <nav className=" lg:w-96 text">
                     <header className="footer-title mx-auto text-5xl">TechByte</header>
                     <h1 className="text-center text-xl mx-auto mb-10 text-orange-500">DON’T MISS OUR FEATURE UPDATE</h1>
                     <div className="relative w-full">

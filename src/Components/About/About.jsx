@@ -1,34 +1,38 @@
 import Navbar from "../Navbar/Navbar";
+import handshake from "../../assets/handshake.png"
+import pin from "../../assets/pin.png"
+import service from "../../assets/customer-service.png"
+import idea from "../../assets/idea.png"
+import calender from "../../assets/calendar.png"
+import software from "../../assets/software.png"
+import AboutCard from "./AboutCard";
 
+const Cards = [
+    {icon:handshake, title:"Friendly Teams", description:"More Than 200 teams"},
+    {icon:idea, title:"Brilliant Idea", description:"We Think Out of the Box"},
+    {icon:pin, title:"Perfect Venues", description:"We Have perfect venues for your event"},
+    {icon:service, title:"24/7 Supports", description:"Any Time anywhere"},
+    {icon:calender, title:"Perfect Planing", description:"Any Time You want"},
+    {icon:software, title:"Best Management", description:"Best Management"}
+]
 
 const About = () => {
-  return (
-    <div className=" max-w-6xl mx-auto">
-        <Navbar></Navbar>
-        <div className="bg-white py-16 mx-auto container">
-      <div className="container mx-auto px-4">
-        <div className="max-w-3xl mx-auto text-center mb-8">
-          <h2 className="text-3xl font-bold text-gray-800 mb-4">About Our Event Management</h2>
-          <p className="text-gray-600">We are passionate about creating unforgettable experiences.</p>
-        </div>
-        <div className="grid grid-cols-2 -mx-4">
-          <div className="w-full md:w-1/2 px-4 mb-8">
-            <div className="bg-gray-100 p-8 rounded-lg">
-              <h3 className="text-xl font-semibold mb-4">Our Mission</h3>
-              <p className="text-gray-700">To bring people together through incredible events, leaving lasting memories and smiles on every face.</p>
+    return (
+        <div>
+            <Navbar></Navbar>
+            <div className="max-w-6xl mx-auto">
+            <h1 className=" text-4xl font-bold mt-28 mb-5">Why Choose Us</h1>
+
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mb-28 gap-5">
+                {
+                    Cards.map((card,idx)=><AboutCard key={idx} card={card}></AboutCard>)
+                }
+
             </div>
-          </div>
-          <div className="w-full md:w-1/2 px-4 mb-8">
-            <div className="bg-gray-100 p-8 rounded-lg">
-              <h3 className="text-xl font-semibold mb-4">Our Vision</h3>
-              <p className="text-gray-700">To be the leading event management company, known for creativity, professionalism, and customer satisfaction.</p>
-            </div>
-          </div>
         </div>
-      </div>
-    </div>
-    </div>
-  );
+        </div>
+    );
 };
 
 export default About;

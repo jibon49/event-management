@@ -17,7 +17,6 @@ import Register from './Components/Register/Register';
 import AuthProvider from './Components/AuthProvider/AuthProvider';
 import PrivateRoute from './Components/PrivateRoute/PrivateRoute';
 import ErrorPage from './Components/ErrorPage/ErrorPage';
-import Features from './Components/Features/Features';
 import EventRegistration from './Components/EventRegistration/EventRegistration';
 import Profile from './Components/Profile/Profile';
 
@@ -42,10 +41,6 @@ const router = createBrowserRouter([
       {
         path: "/register",
         element: <Register></Register>
-      },
-      {
-        path: "/features",
-        element: <Features></Features>
       },
       {
         path: "/registration",
