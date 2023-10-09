@@ -5,9 +5,12 @@ import { NavLink, useLocation, useNavigate } from "react-router-dom";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { FaGoogle } from 'react-icons/fa';
-
+import { signInWithPopup, GoogleAuthProvider, getAuth } from "firebase/auth";
+import { app } from "../../firebase_config";
 
 const Login = () => {
+
+    
 
     const { logIn } = useContext(AuthContext)
     const location = useLocation();
@@ -42,6 +45,23 @@ const Login = () => {
 
     }
 
+    const auth = getAuth(app)
+
+    const handleGoogleSignIn = () => {
+        const provider = new GoogleAuthProvider();
+        signInWithPopup(auth, provider)
+          .then((result) => {
+            const user = result.user;
+            navigate(location?.state ? location.state : '/')
+            console.log("Google Sign-In Successful", user);
+            toast('Google Sign-In Successful');
+          })
+          .catch((error) => {
+            console.error("Google Sign-In Error:", error);
+            toast.error('Google Sign-In Error');
+          });
+      };
+
 
 
     return (
@@ -72,7 +92,7 @@ const Login = () => {
                             <p className="font-semibold text-center mt-7">Don’t Have An Account ? <span className="text-blue-500"><NavLink to='/register'>Register</NavLink></span></p>
                         </form>
                         <div className="p-10 w-2/3 mx-auto mt-6">
-                            <button className=" btn btn-outline w-full mb-2">
+                            <button onClick={handleGoogleSignIn} className=" btn btn-outline w-full mb-2">
                                 <FaGoogle className=' text-blue-500 text-lg'></FaGoogle>Login with
                                 Google
                             </button>
